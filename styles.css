@@ -1,48 +1,117 @@
-body {
-     /* padding espaçam,ento de caixas para dentro */
-    /*  */
+body{
+
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    padding-top: 50%;
+    align-items: center;
+    padding-top: 50px;
 }
 
- #main-header {
-width: 90%;
-background-color: rgb(0, 132, 247);
-
-}
-
-#content {
+#main-header{
     width: 90%;
-    background-color: aquamarine;
+    height: auto;
+    background-color: gray;
+}
+
+ 
+
+#content{
+    width: 90%;
     display: flex;
+    margin: 10px 0;
+
 }
 
+ 
 
-#main-footer {
+#main-footer{
+    background-color: coral;
+    align-items: center;
     width: 90%;
-    background-color: green;
+
 }
 
-#contentent>nav {
+ 
+
+#content>nav{
     margin-right: 10px;
-    background-color: blue;
-    width: 20%;
+    background-color: rgb(223, 160, 137);
+    width: 15%;
     padding-left: 20px;
 }
 
-#content>nav>ul {
-    padding: 0%;
+#content>nav>ul{
+    padding: 0;
 }
 
-#content>#articles {
+#content>nav>ul>li{
+    list-style: none;
+}
+
+#content>#article{
     width: 85%;
+}
+
+.article-item{
+    display: flex;
+    align-items: center;
+    background-color: darkkhaki;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.article-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.image{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(0, 13, 128);
+    margin: 0;
+    }
+
+    .article-detail {
+        width: 80%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .article-detail>header {
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+
+.article-detail>footer {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+
+#main-header>span {
+    display: flex;
+    color: gold;
+    fill: currentColor;
+}
+
+
+#main-header>span>svg {
+    width: 50px;
+    height: 50px;
 }
